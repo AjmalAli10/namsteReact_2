@@ -1,0 +1,29 @@
+{
+  "name": "namstereact_2",
+  "version": "1.0.0",
+  "description": "Learn Minification and Package Manager.",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjmalAli10/namsteReact_2.git"
+  },
+  "author": "Ajmal Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AjmalAli10/namsteReact_2/issues"
+  },
+  "homepage": "https://github.com/AjmalAli10/namsteReact_2#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 20 versions"
+  ]
+}
