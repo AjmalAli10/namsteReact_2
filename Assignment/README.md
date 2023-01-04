@@ -2,7 +2,7 @@
 
 ## What is `NPM` ?
 
-### NPM is not a node package manager(this is not officially called). It is package that run on node javascript runtime environment. NPM is a world's largest registry for softwares. it is used to manages lot of other packages in thier database which is called a registry and NPM can update/ modefied/ install through CLI (Command Line interface - i.e our terminal).
+### NPM is not a node package manager(this is not officially called). It is package manager that run on node javascript runtime environment. NPM is a world's largest registry for softwares. it is used to manages lot of other packages in thier database which is called a registry and NPM can update/ modefied/ install through CLI (Command Line interface - i.e our terminal).
 ---
 
 ##  What is `Parcel/Webpack`? Why do we need it?
