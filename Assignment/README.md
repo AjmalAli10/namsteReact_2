@@ -1,66 +1,66 @@
 # Assignment
 
-## What is `NPM` ?
+## What is `NPM`?
 
-### NPM is not a node package manager(this is not officially called). It is package manager that run on node javascript runtime environment. NPM is a world's largest registry for softwares. it is used to manages lot of other packages in thier database which is called a registry and NPM can update/ modefied/ install through CLI (Command Line interface - i.e our terminal).
+### NPM is not a node package manager(this is not officially called). It is a package manager that runs on a node javascript runtime environment. NPM is the world's largest registry for software. it is used to manage a lot of other packages in their database which is called a registry and NPM can update/modify/ install through CLI (Command Line interface - i.e our terminal).
 ---
 
 ##  What is `Parcel/Webpack`? Why do we need it?
-### These are bundelers. It is a tool to package our code and it dependencies in a single file/ module/ package.
-**We need these bundlers in our project to minifify our code in a single file and also it is used to make our website to load faster in browser.**
->1. **we use bundlers to load faster in user screen.**
->2. **it compress assests like media file in mucch better way for performance.**
->3. **it also used to for development enviroment to make our work faster through many algorithm they have like - HMR(Hot module replacement), Caching while development, Faster Algorithm etc.**
->4. **Bundler optimize the delivery of code and also help in minimize code that are only required in production use only.** 
+### These are bundlers. It is a tool to package our code and its dependencies in a single file/ module/ package.
+**We need these bundlers in our project to minify our code in a single file and also it is used to make our website load faster in the browser.**
+>1. **we use bundlers to load faster on the user screen.**
+>2. **it compresses assets like media files in a much better way for performance.**
+>3. **it is also used for the development environment to make our work faster through many algorithms they have like - HMR(Hot module replacement), Caching while development, Faster Algorithm, etc.**
+>4. **Bundler optimizes the delivery of code and also helps in minimizing code that is only required for production use.** 
 ---
 ## What is `.parcel-cache`?
-### `.parcel-cache` is a folder created  when you start or restart your development server using `npx parcel <entry point of file code>`.
-### More on, It created because of `Caching` techinque used by Parcel. What is parcel saying that `.parcel-cache` folder atomatically tracks all the `dev dependencies` / `plugin` / `Any files` that are used in your builds (means development). So when make any changes to your code.De to caching it rebuilds change since last time it ran.
+### `.parcel-cache` is a folder created when you start or restart your development server using `npx parcel <entry point of file code>`.
+### More on, It was created because of the `Caching` technique used by Parcel. What is parcel saying?  that the `.parcel-cache` folder automatically tracks all the `dev dependencies` / `plugin` / `Any files` that are used in your builds (means development). So when making any changes to your code.De to caching it rebuilds the change since the last time it ran.
 ---
-## What is `npx` ?
-### To understand npx we need to understand 2 - 3 termonalogy - 
+## What is `npx`?
+### To understand npx we need to understand 2 - 3 terminology - 
 >1. **`Locally` installed package ?**
 >2. **`Globally` installed package ?**
 >3. **`package.json` file.**
-  >> **`Locally` installed packages are kept in the same directory that your are working on and these installed packages kept inside `node_module` folder and specific to only that project.**
+  >> **`Locally` installed packages are kept in the same directory that you are working on and these installed packages are kept inside the `node_module` folder and specific to only that project.**
   >>
-  >> **`Globally` installed packages intalled in your system and these packages are not only specific to that projects only. you can work with packages in any projects that are in your system.**
+  >> **`Globally` installed packages installed in your system and these packages are not only specific to that project only. you can work with packages in any projects that are in your system.**
   >>
-  >> **If you want to run package using npm you need to create `package.json` file or it will get created when you installed any packages using npm. it is better to creat package.json file first.**
-### `npx` is used to executes the installed packages that are locally or globally installed
-### `npx` will check whether package exists in $PATH, or in the local project binaries, and if so it will execute it.
-### `npx` is also use to execute a package that does not exists or installed in your working directort $PATH without installing it in your directory.
+  >> **If you want to run a package using npm you need to create a `package.json` file or it will get created when you installed any packages using npm. it is better to create a package.json file first.**
+### `npx` is used to execute the installed packages that are locally or globally installed
+### `npx` will check whether the package exists in $PATH, or the local project binaries and if so it will execute it.
+### `npx` is also used to execute a package that does not exist or is installed in your working directory $PATH without installing it in your directory.
 ---
-## What is difference between `dependencies` vs `devDependencies`
-### `dependencies` - For example you have your project that are depended on ther piece of code or packages installed by npm. which we need in global environment that is called dependencies.
-> **Like - `react` and `react-dom` is required in `prodution build` that `packages` should be inside `dependencies` key in your package.json.**
-### `devDependencies` - `Packages` that are only required for `development` use case that is called `devDependencies`
+## What is the difference between `dependencies` vs `devDependencies`
+### `dependencies` - For example, you have your project that is dependent on the piece of code or packages installed by npm. which we need in a global environment that is called dependencies.
+> **Like - `react` and `react-dom` is required in `production build` that `packages` should be inside the `dependencies` key in your package.json.**
+### `devDependencies` - `Packages` that are only required for the `development` use case that is called `devDependencies`
 > **Like - testing packages**
 ---
-## What is `Tree Shaking` ?
-### `Tree Shaking` is a machenism used by modern bundlers(Webpack, Parcel and RollUp). It will just shack off your code ( funny right :) ). No Worries, it will not hampper your code base that depended on each other. `Tree Shaking` machenism only shake off your `dead code`. Basically it is used to eliminate unnecssary code from  your final bundle(a.k.a single file/ module / package). Leaving behind only code that is actually used in your application.
-> **you might be thinking about what is dead code?
-> dead code are code that are never executed in your program. it will make your code base with unnecessary cultter.**
+## What is `Tree Shaking`?
+### `Tree Shaking` is a mechanism used by modern bundlers(Webpack, Parcel, and RollUp). It will just shack off your code ( funny right :) ). No Worries, it will not hamper your code base that depended on each other. `Tree Shaking` mechanism only shakes off your `dead code`. It is used to eliminate unnecessary code from your final bundle(a.k.a single file/module/package). Leaving behind only code that is used in your application.
+> **you might be thinking about what is dead code.
+> dead codes are codes that are never executed in your program. it will make your code base with unnecessary clutter.**
 ---
 
-## What is `Hot Module Replacement` ?
-### `Hot Module Replacement` is a technique used by modern bundlers(webpack / parcel) for upadting code without fully refresh the page in your browser. `HMR` updates a code by replacing a old code with new code.
+## What is `Hot Module Replacement`?
+### `Hot Module Replacement` is a technique used by modern bundlers(web pack / parcel) for updating code without fully refreshing the page in your browser. `HMR` updates a code by replacing an old code with a new code.
 ---
-## What is `.gitignore`?  What should we add and not add into it?
-### `.gitignore` is file that we create in our working directory. Which is use to ignore files / folders that we don't want to track them in our git repo.
-### The files or a folders we should put in `.gitignore` that can be autogenerated by your system or packages like `node_module`or that can be generated by server.
-### The files or a folders we should not add in `.gitignore` that are required in your prodcution build and development builds like `package.json` and `package-lock.json` files.
+## What is `.gitignore`?  What should we add and not add to it?
+### `.gitignore` is a file that we create in our working directory. Which is used to ignore files/folders that we don't want to track in our git repo.
+### The files or folders we should put in `.gitignore` that can be autogenerated by your system or packages like `node_module`or that can be generated by the server.
+### The files or folders we should not add in `.gitignore` that are required in your production build and development builds like `package.json` and `package-lock.json` files.
 ---
 ## What is the difference between `package.json` and `package-lock.json`?
-### `package.json` is a file used to manage a project's dependencies. It lists all dpendencies that are installed in your project with project name, version, scripts etc.
-### `package-lock.json` on the other hand automatically generated when you installed any dependencies in your peoject. Basically this work as a record of `package.json`
-> **This ensure that your project using exact version of its dependencies.**
+### `package.json` is a file used to manage a project's dependencies. It lists all dependencies that are installed in your project with the project name, version, scripts, etc.
+### `package-lock.json` on the other hand automatically generated when you installed any dependencies in your project. This work as a record of `package.json`
+> **This ensures that your project uses the exact version of its dependencies.**
 > 
-> **This also ensure that your project are installed consistently across all environments.**
+> **This also ensures that your project is installed consistently across all environments.**
 > 
-> **This also ensure the record of `node_module` folder**
+> **This also ensures the record of the `node_module` folder**
 > 
-> **It's a good idea to commit both package.json and package-lock.json to version control, so that other developers working on the project can easily reproduce your dependencies.**
+> **It's a good idea to commit both package.json and package-lock.json to version control so that other developers working on the project can easily reproduce your dependencies.**
 ---
 ## Why should I not modify `package-lock.json`?
-### It is not good idea to modefied `package-lock.json` file because it get created when you have already installed the dependencies. So then It will confilict with `package.json` dependencies that you have all ready installed. It will hammper your project.
+### It is not a good idea to modify the `package-lock.json` file because it gets created when you have already installed the dependencies. So then It will conflict with the `package.json` dependencies that you have already installed. It will hamper your project.
