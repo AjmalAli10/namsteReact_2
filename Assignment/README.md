@@ -1,4 +1,4 @@
-# Assignment
+# Lets understand packages, bundlers, .gitignore.
 
 ## What is `NPM`?
 
