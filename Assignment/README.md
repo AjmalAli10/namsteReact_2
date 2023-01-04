@@ -7,11 +7,11 @@
 
 ##  What is `Parcel/Webpack`? Why do we need it?
 ### These are bundelers. It is a tool to package our code and it dependencies in a single file/ module/ package.
-We need these bundlers in our project to minifify our code in a single file and also it is used to make our website to load faster in browser.
->1. we use bundlers to load faster in user screen.
->2. it compress assests like media file in mucch better way for performance.
->3. it also used to for development enviroment to make our work faster through many algorithm they have like - HMR(Hot module replacement), Caching while development, Faster Algorithm etc.
->4. Bundler optimize the delivery of code and also help in minimize code that are only required in production use only. 
+**We need these bundlers in our project to minifify our code in a single file and also it is used to make our website to load faster in browser.**
+>1. **we use bundlers to load faster in user screen.**
+>2. **it compress assests like media file in mucch better way for performance.**
+>3. **it also used to for development enviroment to make our work faster through many algorithm they have like - HMR(Hot module replacement), Caching while development, Faster Algorithm etc.**
+>4. **Bundler optimize the delivery of code and also help in minimize code that are only required in production use only.** 
 ---
 ## What is `.parcel-cache`?
 ### `.parcel-cache` is a folder created  when you start or restart your development server using `npx parcel <entry point of file code>`.
@@ -19,14 +19,36 @@ We need these bundlers in our project to minifify our code in a single file and 
 ---
 ## What is `npx` ?
 ### To understand npx we need to understand 2 - 3 termonalogy - 
->1. `Locally` installed package ?
->2. `Globally` installed package ?
->3. `package.json` file.
-  >> `Locally` installed packages are kept in the same directory that your are working on and these installed packages kept inside `node_module` folder and specific to only that project.
+>1. **`Locally` installed package ?**
+>2. **`Globally` installed package ?**
+>3. **`package.json` file.**
+  >> **`Locally` installed packages are kept in the same directory that your are working on and these installed packages kept inside `node_module` folder and specific to only that project.**
   >>
-  >> `Globally` installed packages intalled in your system and these packages are not only specific to that projects only. you can work with packages in any projects that are in your system.
+  >> **`Globally` installed packages intalled in your system and these packages are not only specific to that projects only. you can work with packages in any projects that are in your system.**
   >>
-  >> If you want to run package using npm you need to create `package.json` file or it will get created when you installed any packages using npm. it is better to creat package.json file first.
+  >> **If you want to run package using npm you need to create `package.json` file or it will get created when you installed any packages using npm. it is better to creat package.json file first.**
 ### `npx` is used to executes the installed packages that are locally or globally installed
 ### `npx` will check whether package exists in $PATH, or in the local project binaries, and if so it will execute it.
 ### `npx` is also use to execute a package that does not exists or installed in your working directort $PATH without installing it in your directory.
+---
+## What is difference between `dependencies` vs `devDependencies`
+### `dependencies` - For example you have your project that are depended on ther piece of code or packages installed by npm. which we need in global environment that is called dependencies.
+> **Like - `react` and `react-dom` is required in `prodution build` that `packages` should be inside `dependencies` key in your package.json.**
+### `devDependencies` - `Packages` that are only required for `development` use case that is called `devDependencies`
+> **Like - testing packages**
+---
+## What is `Tree Shaking` ?
+### `Tree Shaking` is a machenism used by modern bundlers(Webpack, Parcel and RollUp). It will just shack off your code ( funny right :) ). No Worries, it will not hampper your code base that depended on each other. `Tree Shaking` machenism only shake off your `dead code`. Basically it is used to eliminate unnecssary code from  your final bundle(a.k.a single file/ module / package). Leaving behind only code that is actually used in your application.
+> **you might be thinking about what is dead code?
+> dead code are code that are never executed in your program. it will make your code base with unnecessary cultter.**
+---
+
+## What is `Hot Module Replacement` ?
+### `Hot Module Replacement` is a technique used by modern bundlers(webpack / parcel) for upadting code without fully refresh the page in your browser. `HMR` updates a code by replacing a old code with new code.
+---
+## What is `.gitignore`?  What should we add and not add into it?
+### `.gitignore` is file that we create in our working directory. Which is use to ignore files / folders that we don't want to track them in our git repo.
+### The files or a folders we should put in `.gitignore` that can be autogenerated by your system or packages like `node_module`or that can be generated by server.
+### The files or a folders we should not add in `.gitignore` that are required in your prodcution build and development builds like `package.json` and `package-lock.json` files.
+
+## 
